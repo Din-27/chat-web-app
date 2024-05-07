@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import RoomChat from './components/RoomChat';
+import RoomMessage from './components/RoomMessage';
+import SideBar from './components/SideBar';
+import EastIcon from '@mui/icons-material/East';
+
 
 function App() {
+  const [state, setState] = useState({ options: false, drop: false })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div className='h-[100vh] flex'>
+      <SideBar />
+      <div className='flex w-full'>
+        <div className='w-[55vh] border-r'>
+          <RoomMessage />
+        </div>
+        <div className='w-full'>
+          <RoomChat state={state} setState={setState} />
+        </div>
+        <div className={`${state.options ? 'block' : 'hidden'} bg-green-400 lg:w-1/3 w-1/2`}
+          onClick={() => setState({ ...state, options: false })}>
+          <EastIcon fontSize='large' />
+        </div>
+      </div>
+    </div >
   );
 }
 
