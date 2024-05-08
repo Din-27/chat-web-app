@@ -22,11 +22,11 @@ export default function UserMedia({ variant, state, setState }) {
                     </div>
                 </div>
                 <div className='flex space-x-4'>
-                    <div className='lg:flex hidden my-auto items-center px-4 py-2 bg-purple-100 rounded-lg text-purple-600 space-x-2'>
+                    <div className='sm:flex hidden my-auto items-center px-4 py-2 bg-purple-100 rounded-lg text-purple-600 space-x-2'>
                         <PhoneIcon fontSize='large' />
                         <p className='lg:block hidden font-bold text-lg'>Call</p>
                     </div>
-                    <div className='flex my-auto items-center p-2 bg-purple-100 rounded-lg text-purple-600 space-x-2'>
+                    <div className='sm:hidden flex my-auto items-center p-2 bg-purple-100 rounded-lg text-purple-600 space-x-2'>
                         <div onClick={() => setState({ ...state, drop: state.drop ? false : true })}>
                             <MoreVertIcon fontSize='large' />
                         </div>

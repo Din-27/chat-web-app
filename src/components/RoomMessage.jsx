@@ -11,7 +11,7 @@ export default function RoomMessage() {
                     <AddCircleIcon className='text-purple-600' fontSize='large' />
                 </div>
             </div>
-            <div className='px-4 my-4'>
+            <div className='px-4 space-y-4'>
                 <input
                     type="text"
                     class="outline-none ring-none w-full rounded-lg bg-gray-100 px-4 py-4 text-sm shadow-sm border"

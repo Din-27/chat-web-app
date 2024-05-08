@@ -14,7 +14,7 @@ export default function Dropdown({ state, setState }) {
                 <PhoneIcon fontSize='medium' />
                 <p className='font-bold'>Call</p>
             </div>
-            <div class="p-2">
+            {/* <div class="p-2">
                 <strong class="block p-2 text-xs font-medium uppercase text-gray-400"> General </strong>
                 <div onClick={() => setState({ options: true, drop: false })}
                     class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
@@ -72,7 +72,7 @@ export default function Dropdown({ state, setState }) {
                         Delete Account
                     </button>
                 </form>
-            </div>
+            </div> */}
         </div>
     )
 }

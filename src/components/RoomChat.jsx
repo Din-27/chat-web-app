@@ -41,18 +41,31 @@ const dummy = [
 ]
 export default function RoomChat({ state, setState }) {
     return (
-        <div className='flex flex-col justify-between h-[99vh]'>
-            <div>
+        // <div className='flex flex-col justify-between'>
+        //     <div>
+        //         <div className='p-4 border-b'>
+        //             <UserMedia variant='chat' state={state} setState={setState} />
+        //         </div>
+        //         <div className='h-[85vh] overflow-auto'>
+        //             {dummy.map((x, y) =>
+        //                 <BubbleChat message={x.message} owner={x.owner} status={x.status} key={y} />
+        //             )}
+        //         </div>
+        //     </div>
+        //     <InputMessage />
+        // </div>
+        <div class="grid w-full grid-rows-12 border-e bg-white">
+            <div className='row-span-11'>
                 <div className='p-4 border-b'>
                     <UserMedia variant='chat' state={state} setState={setState} />
                 </div>
-                <div className='h-[76vh] overflow-auto'>
+                <div className='h-[90%] overflow-auto'>
                     {dummy.map((x, y) =>
                         <BubbleChat message={x.message} owner={x.owner} status={x.status} key={y} />
                     )}
                 </div>
             </div>
-            <InputMessage />
+                <InputMessage />
         </div>
     )
 }

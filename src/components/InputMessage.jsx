@@ -1,5 +1,4 @@
 import React from 'react'
-import SendIcon from '@mui/icons-material/Send';
 
 export default function InputMessage() {
     return (
@@ -25,8 +24,9 @@ export default function InputMessage() {
         //         </button>
         //     </span>
         // </div>
-        <div class="relative mx-6">
-            <div class="flex w-full flex-row items-center gap-2 rounded-full border border-gray-900/10 bg-gray-900/5 p-2">
+        // <div class="">
+        <div class="border-t border-gray-100 bg-white p-2">
+            <div class="flex w-full my-auto flex-row items-center gap-2 rounded-full rounded-full border border-gray-900/10 bg-gray-900/5">
                 {/* <div class="flex">
                     <button
                         class="relative h-10 max-h-[40px] w-10 select-none rounded-full text-center align-middle font-sans text-xs font-medium uppercase text-gray-900 transition-all hover:bg-gray-900/10 active:bg-gray-900/20 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
@@ -51,7 +51,7 @@ export default function InputMessage() {
                         </span>
                     </button>
                 </div> */}
-                <div class="relative grid h-full w-full">
+                <div class="grid h-full w-full my-auto">
                     <textarea rows="1" placeholder="Your Message"
                         class="resize-none peer h-10 min-h-full w-full rounded-[7px] !border-0 border-blue-gray-200 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder:text-blue-gray-300 placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-transparent focus:border-t-transparent focus:outline-0 disabled:resize-none disabled:border-0 disabled:bg-blue-gray-50"></textarea>
                     <label

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function SideBar() {
+export default function SideBar({ state, setState }) {
     return (
         <div class="flex w-18 flex-col justify-between border-e bg-white">
             <div>
@@ -12,7 +12,7 @@ export default function SideBar() {
 
                 <div class="border-t border-gray-100">
                     <div class="px-2">
-                        <div class="py-4">
+                        {/* <div class="py-4">
                             <div
                                 class="t group relative flex justify-center rounded bg-purple-100 px-2 py-1.5 text-purple-600"
                             >
@@ -42,12 +42,12 @@ export default function SideBar() {
                                     General
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
 
                         <ul class="space-y-6 border-t border-gray-100 pt-4">
-                            <li>
+                            <li onClick={() => setState({ options: true, drop: false })}>
                                 <div
-                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-purple-100 px-2 py-1.5 hover:text-purple-600"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -72,9 +72,9 @@ export default function SideBar() {
                                 </div>
                             </li>
 
-                            <li>
+                            <li onClick={() => setState({ options: true, drop: false })}>
                                 <div
-                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-purple-100 px-2 py-1.5 hover:text-purple-600"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -99,9 +99,9 @@ export default function SideBar() {
                                 </div>
                             </li>
 
-                            <li>
+                            <li onClick={() => setState({ options: true, drop: false })}>
                                 <div
-                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-purple-100 px-2 py-1.5 hover:text-purple-600"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
@@ -126,9 +126,9 @@ export default function SideBar() {
                                 </div>
                             </li>
 
-                            <li>
+                            <li onClick={() => setState({ options: true, drop: false })}>
                                 <div
-                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    class="group relative flex justify-center rounded px-2 py-1.5 text-gray-500 hover:bg-purple-100 px-2 py-1.5 hover:text-purple-600"
                                 >
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
